@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TabTuner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <img src="../icons/icon48.png" alt="TabTuner" class="logo">
+    <span class="app-name">TabTuner</span>
+    <button id="theme-toggle-btn" class="btn-icon" title="Alternar tema">☀️</button>
+    <button id="mute-all-btn" class="btn-icon" title="Silenciar tudo">🔇</button>
+  </div>
+
+  <div class="section">
+    <div class="row">
+      <span class="row-label">Abaixar som de fundo</span>
+      <label class="toggle">
+        <input type="checkbox" id="ducking-toggle" checked>
+        <span class="toggle-track"></span>
+      </label>
+    </div>
+    <p class="row-desc">Reduz pela metade o volume de cada aba inativa. Ex: aba a 60% vai para 30%.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Volume Global</div>
+    <div class="slider-row">
+      <span class="vol-icon" id="master-icon">🔊</span>
+      <input type="range" id="master-slider" min="0" max="100" value="100">
+      <span class="vol-value" id="master-label">100%</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Abas com Áudio</div>
+    <div id="mixer-container">
+      <div class="state-msg">Buscando…</div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
