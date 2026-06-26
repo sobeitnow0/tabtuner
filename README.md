@@ -1,6 +1,6 @@
 # TabTuner 🎛️
 
-Extensão para Chrome que transforma seu navegador em um mixer de áudio profissional. Controle o volume de cada aba individualmente, direto do popup.
+Extensão que viabiliza o controle o volume de cada aba individualmente, direto do popup.
 
 ## Funcionalidades
 
