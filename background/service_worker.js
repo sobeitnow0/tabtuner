@@ -37,13 +37,18 @@ chrome.commands.onCommand.addListener(async (command) => {
 
 // Track which tabs are ducked (just IDs, volumes saved per-frame in the page)
 async function getDuckedTabs() {
-  const data = await chrome.storage.session.get('duckedTabs');
+  const data = await chrome.storage.local.get('duckedTabs');
   return data.duckedTabs || {};
 }
 
 async function setDuckedTabs(data) {
-  await chrome.storage.session.set({ duckedTabs: data });
+  await chrome.storage.local.set({ duckedTabs: data });
 }
+
+chrome.runtime.onStartup.addListener(async () => {
+  // Mimic session storage by clearing ducked tabs on browser start
+  await setDuckedTabs({});
+});
 
 async function restoreAllDuckedTabs() {
   const duckedTabs = await getDuckedTabs();
