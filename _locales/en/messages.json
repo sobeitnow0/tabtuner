@@ -1,0 +1,12 @@
+{
+  "extName": { "message": "TabTuner" },
+  "extDescription": { "message": "Control the volume of each browser tab individually. A professional audio mixer for your browser." },
+  "toggleDucking": { "message": "Lower background audio" },
+  "duckingDesc": { "message": "Halves the volume of each inactive tab. E.g.: a tab at 60% drops to 30%." },
+  "masterVolume": { "message": "Master Volume" },
+  "tabsWithAudio": { "message": "Tabs with Audio" },
+  "searching": { "message": "Searching…" },
+  "noTabs": { "message": "No tabs with audio found." },
+  "toggleTheme": { "message": "Toggle theme" },
+  "muteAll": { "message": "Mute all" }
+}

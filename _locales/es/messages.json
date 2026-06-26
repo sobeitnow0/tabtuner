@@ -1,0 +1,12 @@
+{
+  "extName": { "message": "TabTuner" },
+  "extDescription": { "message": "Controla el volumen de cada pestaña del navegador individualmente. Un mezclador de audio profesional para tu navegador." },
+  "toggleDucking": { "message": "Bajar sonido de fondo" },
+  "duckingDesc": { "message": "Reduce a la mitad el volumen de cada pestaña inactiva. Ej: una pestaña al 60% baja al 30%." },
+  "masterVolume": { "message": "Volumen General" },
+  "tabsWithAudio": { "message": "Pestañas con Audio" },
+  "searching": { "message": "Buscando…" },
+  "noTabs": { "message": "Ninguna pestaña con audio encontrada." },
+  "toggleTheme": { "message": "Cambiar tema" },
+  "muteAll": { "message": "Silenciar todo" }
+}

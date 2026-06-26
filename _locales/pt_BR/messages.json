@@ -1,0 +1,12 @@
+{
+  "extName": { "message": "TabTuner" },
+  "extDescription": { "message": "Controle o volume de cada aba do navegador individualmente. Um mixer de áudio profissional para o seu navegador." },
+  "toggleDucking": { "message": "Abaixar som de fundo" },
+  "duckingDesc": { "message": "Reduz pela metade o volume de cada aba inativa. Ex: aba a 60% vai para 30%." },
+  "masterVolume": { "message": "Volume Global" },
+  "tabsWithAudio": { "message": "Abas com Áudio" },
+  "searching": { "message": "Buscando…" },
+  "noTabs": { "message": "Nenhuma aba com áudio encontrada." },
+  "toggleTheme": { "message": "Alternar tema" },
+  "muteAll": { "message": "Silenciar tudo" }
+}

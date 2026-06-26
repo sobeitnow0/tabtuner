@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,23 +10,23 @@
   <div class="header">
     <img src="../icons/icon48.png" alt="TabTuner" class="logo">
     <span class="app-name">TabTuner</span>
-    <button id="theme-toggle-btn" class="btn-icon" title="Alternar tema">☀️</button>
-    <button id="mute-all-btn" class="btn-icon" title="Silenciar tudo">🔇</button>
+    <button id="theme-toggle-btn" class="btn-icon" data-i18n-title="toggleTheme">☀️</button>
+    <button id="mute-all-btn" class="btn-icon" data-i18n-title="muteAll">🔇</button>
   </div>
 
   <div class="section">
     <div class="row">
-      <span class="row-label">Abaixar som de fundo</span>
+      <span class="row-label" data-i18n="toggleDucking"></span>
       <label class="toggle">
         <input type="checkbox" id="ducking-toggle" checked>
         <span class="toggle-track"></span>
       </label>
     </div>
-    <p class="row-desc">Reduz pela metade o volume de cada aba inativa. Ex: aba a 60% vai para 30%.</p>
+    <p class="row-desc" data-i18n="duckingDesc"></p>
   </div>
 
   <div class="section">
-    <div class="section-title">Volume Global</div>
+    <div class="section-title" data-i18n="masterVolume"></div>
     <div class="slider-row">
       <span class="vol-icon" id="master-icon">🔊</span>
       <input type="range" id="master-slider" min="0" max="100" value="100">
@@ -35,9 +35,9 @@
   </div>
 
   <div class="section">
-    <div class="section-title">Abas com Áudio</div>
+    <div class="section-title" data-i18n="tabsWithAudio"></div>
     <div id="mixer-container">
-      <div class="state-msg">Buscando…</div>
+      <div class="state-msg" data-i18n="searching"></div>
     </div>
   </div>
 

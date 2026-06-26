@@ -1,6 +1,15 @@
 document.addEventListener('DOMContentLoaded', async () => {
   const container = document.getElementById('mixer-container');
   
+  // i18n: translate all elements with data-i18n attributes
+  const t = (key) => chrome.i18n.getMessage(key) || key;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    el.textContent = t(el.dataset.i18n);
+  });
+  document.querySelectorAll('[data-i18n-title]').forEach(el => {
+    el.title = t(el.dataset.i18nTitle);
+  });
+  
   // Feature: Theme Toggle
   const themeBtn = document.getElementById('theme-toggle-btn');
   chrome.storage.local.get({theme: 'auto'}, (data) => {
@@ -45,7 +54,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   results.forEach(r => { if (r) tabsWithMedia.push(r); });
   
   if (tabsWithMedia.length === 0) {
-    container.innerHTML = '<div class="state-msg">Nenhuma aba com áudio encontrada.</div>';
+    container.innerHTML = `<div class="state-msg">${t('noTabs')}</div>`;
     return;
   }
   
