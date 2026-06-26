@@ -54,11 +54,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   results.forEach(r => { if (r) tabsWithMedia.push(r); });
   
   if (tabsWithMedia.length === 0) {
-    container.innerHTML = `<div class="state-msg">${t('noTabs')}</div>`;
+    container.replaceChildren();
+    const msg = document.createElement('div');
+    msg.className = 'state-msg';
+    msg.textContent = t('noTabs');
+    container.appendChild(msg);
     return;
   }
   
-  container.innerHTML = '';
+  container.replaceChildren();
   
   for (const { tab, currentVolume } of tabsWithMedia) {
     const item = document.createElement('div');
