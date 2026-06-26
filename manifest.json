@@ -14,7 +14,14 @@
     "default_title": "TabTuner"
   },
   "background": {
-    "service_worker": "background/service_worker.js"
+    "service_worker": "background/service_worker.js",
+    "scripts": ["background/service_worker.js"]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tabtuner@sobeitnow.com",
+      "strict_min_version": "109.0"
+    }
   },
   "permissions": [
     "tabs",
